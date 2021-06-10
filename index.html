@@ -6,76 +6,96 @@
 
 	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
+	    <script src="https://kit.fontawesome.com/3853569048.js" crossorigin="anonymous"></script>
+	   
+
 	<title>Developer Portfolio</title>
+	 <link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
 </head>
 <body>
 	<!-- Nav Bar -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
-	  <a class="navbar-brand" href="#">Joel Calibara</a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#home">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
-	  <div class="collapse navbar-collapse" id="home">
-	    <ul class="navbar-nav flex-column">
-	      <li class="nav-item active">
-	        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#about">About</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#">Projects</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#contact">Contacts</a>
-	      </li>
-	    </ul>
-	  </div>
-	</nav>
+				<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+				  <a class="navbar-brand" id="logo" href="#home"><img src="logo.png"></a>
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#home"aria-controls="#home" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
 
+				  <div class="collapse navbar-collapse justify-content-end" id="home">
+				    <ul class="navbar-nav">
+				      <li class="nav-item active">
+				        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#about">About</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#portfolio">Projects</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#contact">Contacts</a>
+				      </li>
+				    </ul>
+				  </div>
+				</nav>
 	<!-- Jumbotron -->
-	<section>
-		<div class="jumbotron jumbotron-fluid">
-		  <div class="container">
-		    <h1 class="display">Joel Calibara</h1>
-		    <p class="lead">Full Stack Web Developer.</p>
+		<div class="jumbotron jumbotron-fluid mt-5 mb-5">
+		  <div class="container contain">
+		    <h1 class="display">"[From Zero to Web page Hero!]"</h1>
+		    <p class="lead"> Where your Web Design needs and Creative Web Solutions
+		   meets. </p>
 		  </div>
 		</div>
-	</section>
-	
-
 	<!-- About me -->
-	<section class="container-fluid">
+	<section class="container-fluid mt-5 mb-5">
 		<div id="about">
 			<div class="col">
-				<h3>Hi, here is a little bit something about me</h3>
+				<h3>Hi! Here is a little bit something about me.</h3>
 				<p>
-					Im a licensed Mechanical engineer since 2014. I decided to change career for the 
+					My name's Joel Calibara, a graduate from P.U.P. Manila and got licensed as Mechanical engineer since 2014.  I've been in the field of construction locally and abroad for 7 years and it made me think that that is the career path for me until the pandemic. Went to look for other jobs and came across with Software/ Web Developing and immediately searched for a bootcamp to get trained. I thought this career change is an unintelligent move and would not be practical but maybe this transition — from a Mechanical Engineer to a Web Developer will help land me my dream job.
 				</p>
 			</div>
 		</div>
 	</section>
 	
 	<!-- Portfolios -->
-	<section class="container-fluid">
-		<div class="card">
-		  <img src="" class="portfolio1"/>
-		  <div class="card-body">
-		    <h5 class="card-title">Capstone 1</h5>
-		    <p class="card-text">
-		      Some quick example text to build on the card title and make up the bulk of the
-		      card's content.
-		    </p>
-		    <a href="" class="btn btn-primary">Button</a>
+
+	<section id="portfolio" class="container-fluid">
+		<h3 class="text-center">Portfolio</h3>
+		<div class="card-deck">
+		  <div class="card">
+		    <img src="port1.png" class="card-img-top" alt="capstone1">
+		    <div class="card-body">
+		      <h5 class="card-title">Capstone 1</h5>
+		      <p class="card-text">Frontend web development</p>
+		      <a href="#home" class="btn btn-primary">Visit Site</a>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <img src="WIP.jpg" class="card-img-top" alt="capstone2">
+		    <div class="card-body">
+		      <h5 class="card-title">Capstone 2</h5>
+		      <p class="card-text">Backend Web Developmet.</p>
+		      <a href="" target="blank" class="btn btn-primary">Visit Site</a>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <img src="WIP.jpg" class="card-img-top" alt="capstone3">
+		    <div class="card-body">
+		      <h5 class="card-title">Capstone 3</h5>
+		      <p class="card-text">FullStack Web Development</p>
+		      <a href=""target="blank" class="btn btn-primary">Visit Site</a>
+		    </div>
 		  </div>
 		</div>
 	</section>
 	
 	<!-- Contact -->
-	<section class="container-fluid mt-5">
+	<section class="container-fluid mt-5 mb-5">
 		<h3 id="contact" class="text-center mb-5">Contacts</h3>
 		<div class="row">
-			<div class="col-lg-6 order-1">
+			<div class="col-lg order-1">
 				<h4 class="justify-left">Send me a message</h4>
 				<h6 class="justify-left">Usually replies within a day</h6>
 				<form>
@@ -96,46 +116,32 @@
 			</div>
 			<div class="col-lg order-2 text-center">
 				<div class="map-responsive">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3862.6645458937464!2d121.04985511535118!3d14.503936683325437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cf396d60ddcf%3A0x27bb3262fae4234e!2sZone%206%20Eagle%20Court!5e0!3m2!1sfil!2sph!4v1623311531980!5m2!1sfil!2sph" width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3862.6645458937464!2d121.04985511535118!3d14.503936683325437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cf396d60ddcf%3A0x27bb3262fae4234e!2sZone%206%20Eagle%20Court!5e0!3m2!1sfil!2sph!4v1623311531980!5m2!1sfil!2sph" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 				</div>
 			</div>
 	</section>
-<!-- footer -->
-	<!-- Site footer -->
-	    <footer class="site-footer">
-	      <div class="container">
-	        <div class="row">
-	          <div class="col-md-8 col-sm-6 col-xs-12">
-	            <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
-	         <a href="#">Scanfcode</a>.
-	            </p>
-	          </div>
-
-	          <div class="col-md-4 col-sm-6 col-xs-12">
-	            <ul class="social-icons">
-	              <li>
-	              	<a href="https://www.facebook.com/joel.calibara.5">
-	              		<i class="fab fa-facebook"></i>
-	              	</a>
-	              </li>
-	              <li>
-	              	<a class="discord" href="#">
-	              		<img src=""></img>
-	              	</a>
-	              </li>
-	              <li>
-	              	<a class="linkedin" href="">
-	              		<img src=""></img>
-	              	</a>
-	              </li>   
-	            </ul>
-	          </div>
-	        </div>
-	      </div>
+	<!-- footer -->
+	<section id="myBtn mt-5">
+		<div class="text-right">
+			<a href="#logo">
+			<button id="myBtn" title="Go to top">
+				Back to Top
+			</button>
+			</a>
+		</div>
+		
+	</section>
+	<footer class="footer">
+		<div class="d-flex bg-dark justify-content-center">
+			<div class="justify-content-center">
+				<a href="https://www.facebook.com/joel.calibara.5"><i class="fab fa-facebook"></i></a>
+				<a href="https://www.linkedin.com/in/joel-calibara-09b091a8/"><i class="fab fa-linkedin"></i></a>
+				<a href="mailto:calibarajoel@gmail.com"><i class="fab fa-google" aria-hidden="true"></i></a>
+			</div>
+		</div>
 	</footer>
-
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </body>
 </html>
 
