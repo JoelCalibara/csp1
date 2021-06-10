@@ -10,24 +10,24 @@
 </head>
 <body>
 	<!-- Nav Bar -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
 	  <a class="navbar-brand" href="#">Joel Calibara</a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#home">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
-	  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+	  <div class="collapse navbar-collapse" id="home">
 	    <ul class="navbar-nav flex-column">
 	      <li class="nav-item active">
-	        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+	        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#">About</a>
+	        <a class="nav-link" href="#about">About</a>
 	      </li>
 	      <li class="nav-item">
 	        <a class="nav-link" href="#">Projects</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#">Contacts</a>
+	        <a class="nav-link" href="#contact">Contacts</a>
 	      </li>
 	    </ul>
 	  </div>
@@ -45,8 +45,8 @@
 	
 
 	<!-- About me -->
-	<section>
-		<div class="row">
+	<section class="container-fluid">
+		<div id="about">
 			<div class="col">
 				<h3>Hi, here is a little bit something about me</h3>
 				<p>
@@ -57,7 +57,7 @@
 	</section>
 	
 	<!-- Portfolios -->
-	<section>
+	<section class="container-fluid">
 		<div class="card">
 		  <img src="" class="portfolio1"/>
 		  <div class="card-body">
@@ -66,13 +66,78 @@
 		      Some quick example text to build on the card title and make up the bulk of the
 		      card's content.
 		    </p>
-		    <a href="#!" class="btn btn-primary">Button</a>
+		    <a href="" class="btn btn-primary">Button</a>
 		  </div>
 		</div>
 	</section>
 	
+	<!-- Contact -->
+	<section class="container-fluid mt-5">
+		<h3 id="contact" class="text-center mb-5">Contacts</h3>
+		<div class="row">
+			<div class="col-lg-6 order-1">
+				<h4 class="justify-left">Send me a message</h4>
+				<h6 class="justify-left">Usually replies within a day</h6>
+				<form>
+					<div class="form-group">
+				  		<label for="username">Full Name</label>
+				  		<input type="text" class="form-control" id="username" placeholder="Juan Dela Cruz" required>
+					</div>
+			  		<div class="form-group">
+			    		<label for="exampleFormControlInput1">Email address</label>
+			    		<input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+			  		</div>
+			  		<div class="form-group">
+			    		<label for="textArea">Message</label>
+			    		<textarea class="form-control" id="textArea" rows="3"></textarea>
+			  		</div>
+			  	</form>		
+			  	<button type="button" class="btn btn-success btn-block mb-3">Send</button>
+			</div>
+			<div class="col-lg order-2 text-center">
+				<div class="map-responsive">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3862.6645458937464!2d121.04985511535118!3d14.503936683325437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cf396d60ddcf%3A0x27bb3262fae4234e!2sZone%206%20Eagle%20Court!5e0!3m2!1sfil!2sph!4v1623311531980!5m2!1sfil!2sph" width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				</div>
+			</div>
+	</section>
+<!-- footer -->
+	<!-- Site footer -->
+	    <footer class="site-footer">
+	      <div class="container">
+	        <div class="row">
+	          <div class="col-md-8 col-sm-6 col-xs-12">
+	            <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+	         <a href="#">Scanfcode</a>.
+	            </p>
+	          </div>
+
+	          <div class="col-md-4 col-sm-6 col-xs-12">
+	            <ul class="social-icons">
+	              <li>
+	              	<a href="https://www.facebook.com/joel.calibara.5">
+	              		<i class="fab fa-facebook"></i>
+	              	</a>
+	              </li>
+	              <li>
+	              	<a class="discord" href="#">
+	              		<img src=""></img>
+	              	</a>
+	              </li>
+	              <li>
+	              	<a class="linkedin" href="">
+	              		<img src=""></img>
+	              	</a>
+	              </li>   
+	            </ul>
+	          </div>
+	        </div>
+	      </div>
+	</footer>
 
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>	
 </body>
 </html>
+
+
+
