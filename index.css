@@ -1,10 +1,29 @@
-body {
-background:url(bg2.png);
+.navbar {
+background:url(bg1.png);
 background-size:cover;
-background-position: center;
-background-size: cover;
+width: 100%
+height: auto;
+
 }
 
+.nav-link {
+	color: white;
+} 
+.navbar-toggler-icon {
+	color: white;
+}
+
+.jumbotron {
+
+}
+
+.display {
+	color: white;
+}
+
+.lead {
+	color: white;
+}
 
 img {
 max-width: 100%;
@@ -52,6 +71,10 @@ body, html {
   margin: 0;
 }
 
+.fas {
+	font-size: 40px;
+	color: #23dbe8;
+}
 
 }
 
